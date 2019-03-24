@@ -1,4 +1,4 @@
-# mbrp
+# MBRP
 Model-Based Requirements Prioritization using PageRank
 
 IDE Used:    
