@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="mbrp" nsURI="http://nu.edu.pk/mbrp" nsPrefix="mbrp">
+  <eClassifiers xsi:type="ecore:EClass" name="RequirementsModel">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ownedRequirement" upperBound="-1"
+        eType="#//Requirement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ownedStakeholders" upperBound="-1"
+        eType="#//Stakeholder" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="testcases" upperBound="-1"
+        eType="#//TestCase" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Requirement" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="linkedRationales" upperBound="-1"
+        eType="#//Rationale"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="priority" eType="#//StakeholderPriority"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mbrpPriority" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="relatedRequirements" upperBound="-1"
+        eType="#//RequirementRelationship" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="riskFactor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cost" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="businessValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="testcases" upperBound="-1"
+        eType="#//TestCase"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FunctionalRequirement" eSuperTypes="#//Requirement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="NonFunctionalRequirement" abstract="true"
+      eSuperTypes="#//Requirement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Rationale">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Stakeholder">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//StakeholderType"
+        defaultValueLiteral="Primary"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="linkedRequirements" upperBound="-1"
+        eType="#//Requirement"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="StakeholderType">
+    <eLiterals name="Primary"/>
+    <eLiterals name="Secondary" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RequirementRelationship">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//RequirementRelationshipType"
+        defaultValueLiteral="Depends"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetRequirement" lowerBound="1"
+        eType="#//Requirement"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RequirementRelationshipType">
+    <eLiterals name="Depends"/>
+    <eLiterals name="Derives" value="1"/>
+    <eLiterals name="Refines" value="2"/>
+    <eLiterals name="Conflicts" value="3"/>
+    <eLiterals name="Realizes" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="StakeholderPriority">
+    <eLiterals name="MustHave"/>
+    <eLiterals name="ShouldHave" value="1"/>
+    <eLiterals name="CouldHave" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SecurityRequirement" eSuperTypes="#//NonFunctionalRequirement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="PerformanceRequirement" eSuperTypes="#//NonFunctionalRequirement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SafetyRequirement" eSuperTypes="#//NonFunctionalRequirement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RobustnessRequirement" eSuperTypes="#//NonFunctionalRequirement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TestCase">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="priority" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"
+        defaultValueLiteral="0.0"/>
+  </eClassifiers>
+</ecore:EPackage>
