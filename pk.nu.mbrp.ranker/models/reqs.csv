@@ -1,0 +1,4 @@
+ID,Title,Dependency,Description,Type,Stakeholder Priority,Risk,Cost,Value
+R1.4   ,,Depends R1.2/Depends R3.1/Depends R3.2/Depends R6.1/,Door Lock,Functional,MustHave,6,4,7
+R1.5,,Depends R1.4/Depends R6.1/,Unlock through Finger prints,Functional,MustHave,1,2,3
+R1.6,,Depends R1.4/,Opening through human recognition,Functional,ShouldHave,1,9,2

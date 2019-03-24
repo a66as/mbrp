@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Ranker
+Bundle-SymbolicName: pk.nu.mbrp.ranker
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: pk.nu.mbrp.ranker
+Bundle-RequiredExecutionEnvironment: JavaSE-10
+Require-Bundle: org.eclipse.emf.ecore;bundle-version="2.14.0",
+ sew.nu.mbrp.edit;bundle-version="1.0.0"
+Import-Package: org.eclipse.core.internal.resources,
+ org.eclipse.core.resources,
+ org.eclipse.emf.ecore.xmi.impl
