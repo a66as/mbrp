@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:mbrp="http://nu.edu.pk/mbrp" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description">
+  <viewpoint:DAnalysis xmi:id="_QthIsE5YEemKiPp9qckxXQ" selectedViews="_VIQOoE5YEemKiPp9qckxXQ" version="13.0.0.201804031646">
+    <semanticResources>My.mbrp</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_VIQOoE5YEemKiPp9qckxXQ">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/pk.nu.mbrp.design/description/mbrp.odesign#//@ownedViewpoints[name='Requirements']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_VJ7poE5YEemKiPp9qckxXQ" name="RequirementsModel" repPath="#_VI0PUE5YEemKiPp9qckxXQ">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/pk.nu.mbrp.design/description/mbrp.odesign#//@ownedViewpoints[name='Requirements']/@ownedRepresentations[name='RequirementsModel']"/>
+        <target xmi:type="mbrp:RequirementsModel" href="My.mbrp#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="_VJ078E5YEemKiPp9qckxXQ" name="RequirementsModel" uid="_VI0PUE5YEemKiPp9qckxXQ">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_VJ2xIE5YEemKiPp9qckxXQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_VJ2xIU5YEemKiPp9qckxXQ"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_VLfI0E5YEemKiPp9qckxXQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_VLfI0U5YEemKiPp9qckxXQ" type="Sirius" element="_VJ078E5YEemKiPp9qckxXQ" measurementUnit="Pixel">
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_VLfI0k5YEemKiPp9qckxXQ"/>
+      </data>
+    </ownedAnnotationEntries>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/pk.nu.mbrp.design/description/mbrp.odesign#//@ownedViewpoints[name='Requirements']/@ownedRepresentations[name='RequirementsModel']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_VJ3YME5YEemKiPp9qckxXQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/pk.nu.mbrp.design/description/mbrp.odesign#//@ownedViewpoints[name='Requirements']/@ownedRepresentations[name='RequirementsModel']/@defaultLayer"/>
+    <target xmi:type="mbrp:RequirementsModel" href="My.mbrp#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mbrp:RequirementsModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mbrp="http://nu.edu.pk/mbrp">
+  <ownedRequirement xsi:type="mbrp:SecurityRequirement" id="123">
+    <relatedRequirements type="Refines" targetRequirement="//@ownedRequirement.1"/>
+  </ownedRequirement>
+  <ownedRequirement xsi:type="mbrp:FunctionalRequirement" id="1235"/>
+</mbrp:RequirementsModel>
