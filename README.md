@@ -3,10 +3,11 @@ Model-Based Requirements Prioritization using PageRank
 
 IDE Used:
 
-Eclipse Modeling Tools
-
-Version: Photon Release (4.8.0)
-Build id: 20180619-1200
+Eclipse Modeling Tools, Version: Photon Release (4.8.0), Build id: 20180619-1200 with     
+	
+	Sirius Properties Views - Specifier Support	6.0.1.201808231529
+    Sirius Samples	6.0.1.201808231529
+    Sirius Specifier Environment	6.0.1.201808231529
 
 # Concrete Syntax Setup
 1) Import the pk.nu.mbrp meta-model prject into your eclipse workspace.
