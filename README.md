@@ -19,7 +19,7 @@ IDE Used:
 1) Import the pk.nu.mbrp.ranker into your workspace
 2) Run the GUIController.java as java application
 3) A GUI will pop up
-4) Select you desiderd model and click the Rank button to rank the requirements
+4) Tyope the path of your desired model and click the Rank button to rank the requirements
 
 # Generating Models from CSV File
 A sample CSV file can be found in the models directory. The CSV file is parsed by the tool and a model is generated in the desired folder. Note that all the paths are relative to the current project (pk.nu.mbrp.ranker).
