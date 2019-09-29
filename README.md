@@ -5,7 +5,7 @@ This work resulted in the following publications:
 
 [1] Abbas, M., Inayat, I., Saadatmand, M., & Jan, N. (2019, April). Requirements Dependencies-Based Test Case Prioritization for Extra-Functional Properties. In 2019 IEEE International Conference on Software Testing, Verification and Validation Workshops (ICSTW) (pp. 159-163). IEEE.
 
-[2] Abbas, M., Inayat, I., Jan, N., Saadatmand, M., Paul, E., & Sundmark, D. (2019) MBRP: Model-based Requirements Prioritization Using PageRank Algorithm. Pre-Print: https://www.researchgate.net/publication/332593691_MBRP_Model-based_Requirements_Prioritization_Using_PageRank_Algorithm
+[2] Abbas, M., Inayat, I., Jan, N., Saadatmand, M., Paul, E., & Sundmark, D. (2019) MBRP: Model-based Requirements Prioritization Using PageRank Algorithm. Accepted In 2019 APSEC: The 26th Asia-Pacific Software Engineering Conference
 
 IDE Used:    
 	
